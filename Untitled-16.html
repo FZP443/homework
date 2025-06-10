@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" rel="stylesheet">
+    <style type="text/css">
+    .f {
+	color: #0FF;
+}
+    .l {
+	color: #0FF;
+}
+    .l {
+	color: #0FF;
+}
+    .p {
+	color: #0FF;
+}
+    .j {
+	color: #0FF;
+}
+    .j {
+	color: #0FF;
+}
+    </style>
+    <title>咖啡店宣传网站</title>
+</head>
+
+<body class="bg-gray-100 font-sans">
+    <!-- 导航栏 -->
+    <nav class="bg-white shadow-md fixed top-0 left-0 right-0 z-50"></nav>
+
+    <!-- 页面内容 -->
+<div class="container mx-auto px-4 py-24" id="page-content">
+        <!-- 首页 -->
+  <div id="page-1" class="page">
+        <div class="text-center mb-8">
+                <h1 class="text-5xl font-bold text-gray-800 mb-4">&nbsp;</h1>
+        </div>
+      </div>
+      <div id="page-2" class="page hidden">
+      </div>
+
+        <!-- 店内环境 -->
+        <div id="page-3" class="page hidden">
+            <h1 class="text-4xl font-bold text-gray-800 mb-8">店内环境</h1>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <img src="picture/_cgi-bin_mmwebwx-bin_webwxgetmsgimg__&MsgID=6513733206194824203&skey=@crypt_96d8f368_eca8ffe4d275760baa68db7e86f0da0b&mmweb_appid=wx_webfilehelper.jpg?random=8" alt="店内座位" class="mb-4 rounded-md">
+                    <p class="text-gray-600">舒适的座位，让您享受悠闲时光</p>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <img src="picture/_cgi-bin_mmwebwx-bin_webwxgetmsgimg__&MsgID=9130259889260402218&skey=@crypt_96d8f368_eca8ffe4d275760baa68db7e86f0da0b&mmweb_appid=wx_webfilehelper.jpg?random=9" alt="咖啡制作区" class="mb-4 rounded-md">
+                    <p class="text-gray-600">专业的咖啡制作区，展现咖啡的魅力</p>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <img src="picture/_cgi-bin_mmwebwx-bin_webwxgetmsgimg__&MsgID=5206612461638863671&skey=@crypt_96d8f368_eca8ffe4d275760baa68db7e86f0da0b&mmweb_appid=wx_webfilehelper.jpg?random=10" alt="店内装饰" class="mb-4 rounded-md">
+                    <p class="text-gray-600">精美的店内装饰，营造温馨氛围</p>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <img src="picture/_cgi-bin_mmwebwx-bin_webwxgetmsgimg__&MsgID=7279473485036301438&skey=@crypt_96d8f368_eca8ffe4d275760baa68db7e86f0da0b&mmweb_appid=wx_webfilehelper.jpg?random=11" alt="窗外风景" class="mb-4 rounded-md">
+                    <p class="text-gray-600">透过窗户，欣赏美丽的街景</p>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <img src="picture/_cgi-bin_mmwebwx-bin_webwxgetmsgimg__&MsgID=8603114783510029188&skey=@crypt_96d8f368_eca8ffe4d275760baa68db7e86f0da0b&mmweb_appid=wx_webfilehelper.jpg?random=12" alt="书架" class="mb-4 rounded-md">
+                    <p class="text-gray-600">丰富的书架，让您在咖啡时光中阅读</p>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <img src="picture/_cgi-bin_mmwebwx-bin_webwxgetmsgimg__&MsgID=5206612461638863671&skey=@crypt_96d8f368_eca8ffe4d275760baa68db7e86f0da0b&mmweb_appid=wx_webfilehelper.jpg?random=13" alt="户外座位" class="mb-4 rounded-md">
+                    <p class="text-gray-600">户外座位，享受阳光与咖啡的结合</p>
+                </div>
+            </div>
+            <div class="flex justify-center mt-8">
+                <a href="#" onclick="showPage(1)" class="bg-gray-300 hover:bg-gray-400 text-gray-800 font-bold py-3 px-6 rounded-full">返回首页</a>
+            </div>
+        </div>
+
+        <!-- 咖啡豆故事 -->
+        <div id="page-4" class="page hidden">
+            <h1 class="text-4xl font-bold text-gray-800 mb-8">&nbsp;</h1>
+    </div>
+    </div>
+    <footer class="bg-white shadow-md">
+      <div class="container mx-auto px-4 py-6 text-center text-gray-600">
+            <div class="flex justify-center space-x-4 mt-4">
+                <a href="#" class="text-gray-600 hover:text-gray-800"><i class="fab fa-facebook-f"></i></a>
+                <a href="#" class="text-gray-600 hover:text-gray-800"><i class="fab fa-twitter"></i></a>
+                <a href="#" class="text-gray-600 hover:text-gray-800"><i class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        function showPage(pageNumber) {
+            const pages = document.querySelectorAll('.page');
+            pages.forEach(page => {
+                page.classList.add('hidden');
+            });
+            const targetPage = document.getElementById(`page-${pageNumber}`);
+            targetPage.classList.remove('hidden');
+        }
+    </script>
+</body>
+
+</html>    

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>咖啡购买 - 支付选项</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdn.jsdelivr.net/npm/font-awesome@4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#8B5A2B',
+                        secondary: '#D2B48C',
+                        neutral: {
+                            100: '#F9F5F0',
+                            800: '#333333'
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-neutral-100 font-sans text-neutral-800">
+<div class="container mx-auto px-4 py-12 max-w-md">
+        <!-- 订单信息卡片 -->
+        <div class="bg-white rounded-xl shadow-md mb-8 overflow-hidden">
+            <div class="bg-primary text-white p-4">
+                <h1 class="text-xl font-bold">确认订单</h1>
+            </div>
+            <div class="p-6">
+                <div class="flex items-center mb-4">
+                  <div class="ml-4">
+                    <h2 class="font-medium"><span class="text-xl font-bold text-gray-800 mb-2">焦糖玛奇朵</span></h2>
+                  </div>
+                    <div class="ml-auto font-bold text-primary">¥6.00</div>
+              </div>
+                <div class="border-t border-neutral-100 pt-4 mt-4">
+                    <div class="flex justify-between mb-2">
+                        <span>小计</span>
+                        <span>¥6.00</span></div>
+                    <div class="flex justify-between mb-2">
+                        <span>配送费</span>
+                        <span>¥0.00</span>
+                    </div>
+                    <div class="flex justify-between font-bold text-lg mt-4">
+                        <span>总计</span>
+                        <span>¥6.00</span></div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 支付选项卡片 -->
+        <div class="bg-white rounded-xl shadow-md mb-8 overflow-hidden">
+            <div class="bg-primary text-white p-4">
+                <h2 class="text-xl font-bold">选择支付方式</h2>
+            </div>
+            <div class="p-6">
+                <div class="space-y-4">
+                  <label class="flex items-center p-4 border border-neutral-200 rounded-lg cursor-pointer hover:border-primary transition-colors">
+                        <input type="radio" name="payment" class="mr-4 text-primary" checked>
+                      <i class="fa fa-credit-card text-2xl mr-4 text-blue-600"></i>支付宝</label>
+                    <label class="flex items-center p-4 border border-neutral-200 rounded-lg cursor-pointer hover:border-primary transition-colors">
+                        <input type="radio" name="payment" class="mr-4 text-primary">
+                        <i class="fa fa-wechat text-2xl mr-4 text-green-500"></i>
+                        <span>微信支付</span>
+                  </label>
+                </div>
+            </div>
+        </div>
+
+        <!-- 支付按钮 -->
+  <button class="w-full bg-primary hover:bg-primary/90 text-white font-medium py-4 px-6 rounded-xl transition-colors text-lg shadow-lg">
+            立即支付 
+    </button>
+
+    <!-- 返回按钮 -->
+    <a href="index.html" class="block text-center mt-4 text-neutral-800/70 hover:text-primary transition-colors">
+        <i class="fa fa-arrow-left mr-1"></i> 返回购物
+    </a>
+  </div>
+
+    <footer class="mt-12 py-6 bg-white border-t border-neutral-200">
+        <div class="container mx-auto px-4 text-center text-neutral-800/50 text-sm">
+            <p>&copy; 2025 农林咖啡. 保留所有权利。</p>
+        </div>
+    </footer>
+</body>
+</html>
